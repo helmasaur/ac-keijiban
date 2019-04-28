@@ -1,4 +1,5 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![](https://img.shields.io/npm/v/ac-keijiban.svg)](https://www.npmjs.com/package/ac-keijiban)
 
 # AC-Keijiban
 
@@ -11,18 +12,10 @@ The quotes come from three types of board message:
 
 ## Installation
 
-The package isn't on NPM yet. To use it, there are two solutions.
-
-### Manual download
-
-You have to download the [archive](https://github.com/helmasaur/ac-keijiban/archive/master.zip) manually from this repository. Then, extract it within your project.
-
-### Cloning the repository
-
-You  have to clone this repository within your project using the command `git`.
+You  have to add this module to your NPM project folder.
 
 ```bash
-$ git submodule add https://github.com/Helmasaur/ac-keijiban.git ac-keijiban
+$ npm add ac-keijiban
 ```
 
 ## Example
@@ -31,9 +24,9 @@ $ git submodule add https://github.com/Helmasaur/ac-keijiban.git ac-keijiban
 
 ```js
 // Require with custom language
-const acKeijiban = require('..')('en_US');
+const acKeijiban = require('ac-keijiban')('en_US');
 // Require without an argument sets 'en_US'
-const acKeijiban = require('..')();
+const acKeijiban = require('ac-keijiban')();
 ```
 
 ### Displaying a random "Message of the Week"
