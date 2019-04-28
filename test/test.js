@@ -1,4 +1,4 @@
-const acKeijiban = require('..')('en_UrefgegttS');
+const acKeijiban = require('..')('en_US');
 
 console.log(`*Message of the Week* (1/${acKeijiban.messageOfTheWeekDataLength})\n`)
 console.log(`${acKeijiban.talkingToMyself()}\n`);
