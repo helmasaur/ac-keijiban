@@ -15,7 +15,7 @@ The quotes come from three types of board message:
 You  have to add this module to your NPM project folder.
 
 ```bash
-$ npm add ac-keijiban
+$ npm install ac-keijiban
 ```
 
 ## Example
