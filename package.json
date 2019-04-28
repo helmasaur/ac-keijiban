@@ -1,6 +1,6 @@
 {
   "name": "ac-keijiban",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Randomly get a message from the Animal Crossing bulletin board",
   "main": "index.js",
   "directories": {
