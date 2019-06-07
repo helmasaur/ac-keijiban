@@ -7,23 +7,37 @@ module.exports = language => {
 	}
 	// Imports the data
 	const messageOfTheWeekData = require(`./data/${language}/messageOfTheWeekData.js`);
+	const poetryData = require(`./data/${language}/poetryData.js`);
 	const talkingToMyselfData = require(`./data/${language}/talkingToMyselfData.js`);
-	const poetryData = require(`./data/${language}/poetryData.js`); 
 
 	// Modules
 	return {
-		messageOfTheWeek: () => {
-			return randomMessage(messageOfTheWeekData);
+		messageOfTheWeek: {
+			all: messageOfTheWeekData,
+			count: messageOfTheWeekData.length,
+			random: () => {
+				return randomMessage(messageOfTheWeekData);
+		   },
 		},
-		talkingToMyself: () => {
-			return randomMessage(talkingToMyselfData);
+		poetry: {
+			all: poetryData,
+			count: poetryData.length,
+			random: () => {
+				return randomMessage(poetryData);
+			}
 		},
-		poetry: () => {
-			return randomMessage(poetryData);
+		talkingToMyself: {
+			all: talkingToMyselfData,
+			count: talkingToMyselfData.length,
+			random: () => {
+				return randomMessage(talkingToMyselfData);
+			}
 		},
-		messageOfTheWeekDataLength: messageOfTheWeekData.length,
-		talkingToMyselfDataLength: talkingToMyselfData.length,
-		poetryDataLength: poetryData.length
+		all: messageOfTheWeekData.concat(poetryData.concat(talkingToMyselfData)),
+		count: messageOfTheWeekData.length + poetryData.length + talkingToMyselfData.length,
+		random: () => {
+			return randomMessage(messageOfTheWeekData.concat(poetryData.concat(talkingToMyselfData)));
+		}
 	};
 };
 
