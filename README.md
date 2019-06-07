@@ -33,21 +33,21 @@ const acKeijiban = require('ac-keijiban')();
 
 ```js
 console.log('*Message of the Week*');
-console.log(acKeijiban.messageOfTheWeek());
-```
-
-### Displaying a random "Talking to Myself"
-
-```js
-console.log('-Talking to Myself-');
-console.log(acKeijiban.talkingToMyself());
+console.log(acKeijiban.messageOfTheWeek.random());
 ```
 
 ### Displaying a random "Poetry"
 
 ```js
 console.log('-Poetry-');
-console.log(acKeijiban.poetry());
+console.log(acKeijiban.poetry.random());
+```
+
+### Displaying a random "Talking to Myself"
+
+```js
+console.log('-Talking to Myself-');
+console.log(acKeijiban.talkingToMyself.random());
 ```
 
 ## Translation
@@ -59,7 +59,7 @@ Obviously, you are free to participate to the translation in French or any other
 ## Thanks
 
 Thanks to:
-- The [*Programming Discussion*](https://progdisc.club) Discord server;
+- The [*Programming Discussion*](https://progdisc.club) and the [*Coding Den*](https://discordapp.com/invite/code) Discord servers;
 - [r/AnimalCrossing](https://www.reddit.com/r/AnimalCrossing) on Reddit;
 - The [*Bulletin Board*](https://animalcrossing.fandom.com/wiki/Bulletin_Board) article on the *Animal Crossing* FANDOM wiki;
 - Nintendo and Katsuya Eguchi for creating *Animal Crossing*.
