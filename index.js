@@ -1,11 +1,16 @@
 const fs = require('fs');
+const regex = new RegExp('^[a-z]{2}-[A-Z]{2}$'); // xx-YY
 
 module.exports = language => {
-	// Checks if a language has been given or if the language given doesn't exist
-	if(typeof language === 'undefined' || !fs.existsSync(`./data/${language}`)) {
-		language = 'en_US';
+	// Language format and existance verification
+	if (regex.test(language)) { // Language format (xx-YY) verification
+		language = language.substring(0, 2);
 	}
-	// Imports the data
+	if (typeof language === 'undefined' || !fs.existsSync(`./data/${language}`)) { // Language defined and language (xx format) existance verification
+		language = 'en';
+	}
+
+	// Importation of the data
 	const messageOfTheWeekData = require(`./data/${language}/messageOfTheWeekData.js`);
 	const poetryData = require(`./data/${language}/poetryData.js`);
 	const talkingToMyselfData = require(`./data/${language}/talkingToMyselfData.js`);
