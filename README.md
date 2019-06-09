@@ -23,9 +23,11 @@ $ npm install ac-keijiban
 ### Importing the module
 
 ```js
-// Require with custom language
-const acKeijiban = require('ac-keijiban')('en_US');
-// Require without an argument sets 'en_US'
+// Require with a language (format xx)
+const acKeijiban = require('ac-keijiban')('en');
+// Require with a language (format xx-YY) sets 'en'(format xx)
+const acKeijiban = require('ac-keijiban')('en-US')
+// Require without an argument sets 'en'
 const acKeijiban = require('ac-keijiban')();
 ```
 
@@ -66,5 +68,5 @@ Thanks to:
 
 ## Licenses
 
-- My source code is published under [GNU General Public License v3.0](https://github.com/Helmasaur/ac-keijiban/blob/master/LICENSE) (GPL-3.0).
+- My source code is published under [MIT License](https://github.com/Helmasaur/ac-keijiban/blob/master/LICENSE).
 - All the quotes from *Animal Crossing: Wild World* is the property of Nintendo.

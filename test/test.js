@@ -1,4 +1,6 @@
-const acKeijiban = require('..')('en_US');
+const acKeijiban = require('..')('en');
+// const acKeijiban = require('..')('en-US');
+// const acKeijiban = require('..')();
 
 console.log(`*Message of the Week* (1/${acKeijiban.messageOfTheWeek.count})\n`);
 console.log(`${acKeijiban.messageOfTheWeek.random()}\n`);
@@ -16,4 +18,4 @@ console.log(`${acKeijiban.random()}\n`);
 // console.log(`${acKeijiban.messageOfTheWeek.all}\n`);
 // console.log(`${acKeijiban.poetry.all}\n`);
 // console.log(`${acKeijiban.talkingToMyself.all}\n`);
-// console.log(`${acKeijiban.all}\n`);
+// console.log(`${acKeijiban.all}\n`);*/
