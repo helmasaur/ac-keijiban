@@ -76,7 +76,7 @@ Thanks to:
 - [r/AnimalCrossing](https://www.reddit.com/r/AnimalCrossing) on Reddit;
 - The [*Bulletin Board*](https://animalcrossing.fandom.com/wiki/Bulletin_Board) article on the *Animal Crossing* FANDOM wiki;
 - Nintendo and Katsuya Eguchi for creating *Animal Crossing*;
-- BelleChoucroute for the French translation.
+- [BelleChoucroute](https://twitter.com/Clo_Stylinson) for the French translation.
 
 ## Licenses
 
