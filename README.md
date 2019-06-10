@@ -7,8 +7,8 @@ Sends a random message from the Animal Crossing: Wild World video game on Ninten
 
 The quotes come from three types of board message:
 - "Message of the Week"
-- "Talking to Myself"
 - "Poetry"
+- "Talking to Myself"
 
 ## Installation
 
@@ -54,9 +54,20 @@ console.log(acKeijiban.talkingToMyself.random());
 
 ## Translation
 
-For the moment, the only language avaible is English. I will collect them in French while I play to *Animal Crossing: Wild World* on Nintendo DS.
+For the moment, the only language avaible is English. The French messages are being collected directly from *Animal Crossing: Wild World* on Nintendo DS.
 
-Obviously, you are free to participate to the translation in French or any other language.
+Obviously, you are free to participate to the translation in French or in any other language.
+
+### Avaible languages
+
+#### English 
+- "Message of the Week": 85 *(complete)*
+- "Poetry": 2 *(complete)*
+- "Talking to Myself": 74 *(complete)*
+#### French
+- "Message of the Week": 8
+- "Poetry": 0
+- "Talking to Myself": 4
 
 ## Thanks
 
@@ -64,7 +75,8 @@ Thanks to:
 - The [*Programming Discussion*](https://progdisc.club) and the [*Coding Den*](https://discordapp.com/invite/code) Discord servers;
 - [r/AnimalCrossing](https://www.reddit.com/r/AnimalCrossing) on Reddit;
 - The [*Bulletin Board*](https://animalcrossing.fandom.com/wiki/Bulletin_Board) article on the *Animal Crossing* FANDOM wiki;
-- Nintendo and Katsuya Eguchi for creating *Animal Crossing*.
+- Nintendo and Katsuya Eguchi for creating *Animal Crossing*;
+- BelleChoucroute for the French translation.
 
 ## Licenses
 
