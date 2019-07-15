@@ -1,4 +1,3 @@
-const fs = require('fs');
 const regex = new RegExp('^[a-z]{2}-[A-Z]{2}$'); // xx-YY
 
 module.exports = language => {
@@ -7,17 +6,20 @@ module.exports = language => {
 		language = language.substring(0, 2);
 	}
 
-	// Language folder existance verification
-	try {
-		fs.accessSync(`../data/${language}`); // Why ".." and not "."?
-	} catch (e) {
-		language = 'en';
-	}
+	let messageOfTheWeekData;
+	let poetryData;
+	let talkingToMyselfData;
 
 	// Importation of the data
-	const messageOfTheWeekData = require(`./data/${language}/messageOfTheWeekData.js`);
-	const poetryData = require(`./data/${language}/poetryData.js`);
-	const talkingToMyselfData = require(`./data/${language}/talkingToMyselfData.js`);
+	try {
+		messageOfTheWeekData = require(`./data/${language}/messageOfTheWeekData.js`);
+		poetryData = require(`./data/${language}/poetryData.js`);
+		talkingToMyselfData = require(`./data/${language}/talkingToMyselfData.js`);
+	} catch (e) {
+		messageOfTheWeekData = require('./data/en/messageOfTheWeekData.js');
+		poetryData = require('./data/en/poetryData.js');
+		talkingToMyselfData = require('./data/en/talkingToMyselfData.js');
+	}
 
 	// Modules
 	return {
