@@ -1,4 +1,4 @@
-const regex = new RegExp('^[a-z]{2}-[A-Z]{2}$'); // xx-YY
+const regex = new RegExp('^[a-z]{2}(-[A-Z]{2})?$'); // xx-YY
 
 module.exports = language => {
 	// Language format verification
