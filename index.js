@@ -1,19 +1,25 @@
-const fs = require('fs');
-const regex = new RegExp('^[a-z]{2}-[A-Z]{2}$'); // xx-YY
+const regex = new RegExp('^[a-z]{2}(-[A-Z]{2})?$'); // xx-YY
 
 module.exports = language => {
-	// Language format and existance verification
+	// Language format verification
 	if (regex.test(language)) { // Language format (xx-YY) verification
 		language = language.substring(0, 2);
 	}
-	if (typeof language === 'undefined' || !fs.existsSync(`./data/${language}`)) { // Language defined and language (xx format) existance verification
-		language = 'en';
-	}
+
+	let messageOfTheWeekData;
+	let poetryData;
+	let talkingToMyselfData;
 
 	// Importation of the data
-	const messageOfTheWeekData = require(`./data/${language}/messageOfTheWeekData.js`);
-	const poetryData = require(`./data/${language}/poetryData.js`);
-	const talkingToMyselfData = require(`./data/${language}/talkingToMyselfData.js`);
+	try {
+		messageOfTheWeekData = require(`./data/${language}/messageOfTheWeekData.js`);
+		poetryData = require(`./data/${language}/poetryData.js`);
+		talkingToMyselfData = require(`./data/${language}/talkingToMyselfData.js`);
+	} catch (e) {
+		messageOfTheWeekData = require('./data/en/messageOfTheWeekData.js');
+		poetryData = require('./data/en/poetryData.js');
+		talkingToMyselfData = require('./data/en/talkingToMyselfData.js');
+	}
 
 	// Modules
 	return {
@@ -22,7 +28,7 @@ module.exports = language => {
 			count: messageOfTheWeekData.length,
 			random: () => {
 				return randomMessage(messageOfTheWeekData);
-		   },
+			}
 		},
 		poetry: {
 			all: poetryData,
