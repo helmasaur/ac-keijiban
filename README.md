@@ -3,7 +3,7 @@
 
 # AC-Keijiban
 
-Sends a random message from the Animal Crossing: Wild World video game on Nintend DS created by Katsuya Eguchi and published in 2005.
+Sends a random message from the *Animal Crossing: Wild World* video game on Nintend DS created by Katsuya Eguchi and published in 2005.
 
 The quotes come from three types of board message:
 - "Message of the Week"
@@ -12,7 +12,7 @@ The quotes come from three types of board message:
 
 ## Installation
 
-You  have to add this module to your NPM project folder.
+You have to add this module to your npm modules folder.
 
 ```bash
 $ npm install ac-keijiban
@@ -65,9 +65,9 @@ Obviously, you are free to participate to the translation in French or in any ot
 - "Poetry": 2 *(complete)*
 - "Talking to Myself": 74 *(complete)*
 #### French
-- "Message of the Week": 8
-- "Poetry": 0
-- "Talking to Myself": 4
+- "Message de la semaine": 18
+- "Poème": 0
+- "Réflexions": 13
 
 ## Thanks
 
@@ -76,8 +76,8 @@ Thanks to:
 - [r/AnimalCrossing](https://www.reddit.com/r/AnimalCrossing) on Reddit;
 - The [*Bulletin Board*](https://animalcrossing.fandom.com/wiki/Bulletin_Board) article on the *Animal Crossing* FANDOM wiki;
 - Nintendo and Katsuya Eguchi for creating *Animal Crossing*;
-- [BelleChoucroute](https://twitter.com/Clo_Stylinson) for the French translation.
-
+- [BelleChoucroute](https://twitter.com/BelleChoucroute) for the French translation.
+- [Zeste de Savoir](https://zestedesavoir.com) especially (ache and A-312) for making my code better.
 ## Licenses
 
 - My source code is published under [MIT License](https://github.com/Helmasaur/ac-keijiban/blob/master/LICENSE).
