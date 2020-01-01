@@ -54,5 +54,9 @@ module.exports = language => {
 
 // Returns a random string from an array
 const randomMessage = array => {
-	return array[Math.floor(Math.random() * array.length)];
+	message = array[Math.floor(Math.random() * array.length)];
+	if (message === undefined || message === null) {
+		return -1;
+	}
+	return message;
 }
